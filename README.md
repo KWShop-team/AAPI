@@ -1,26 +1,24 @@
 # How to inject:
 
 ```csharp
-using aapi;
+using AToolsAPI;
 
-try
-{
-  API.Inject();
-}
-catch (Exception ex) {
- MessageBox.Show("Error while injecting AAPI: "+e, "Error!", MessageBoxButtons.OK, MessageBoxIcon.Error);
-}
+AAPI.setconfig("execname", "version", "execmessage");
+
+AAPI.Inject(false); // True means console
 
 ```
 
 # How to execute:
 
 ```csharp
-using aapi;
+using AToolsAPI;
 
-  API.ExecuteScript(richTextBox1.Text); // Make sure to have richTextBox1 In UI!
+AAPI.setconfig("execname", "version", "execmessage");
+
+API.ExecuteScript(richTextBox1.Text); // Make sure to have richTextBox1 In UI!
 ```
 
 > [!WARNING]
 >
-> Exploiting in Roblox results an ban. Use at you'r own risk!
+> Exploiting in Roblox results an ban. Use at your own risk!
